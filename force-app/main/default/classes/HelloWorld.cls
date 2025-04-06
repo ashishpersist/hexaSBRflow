@@ -6,10 +6,11 @@ public with sharing class HelloWorld {
     }
     public set<Integer> intSet;
     public static void gulMohorNagar(Id accId){
+        if(accId!=null){     
         Account objAcc=new Account();
         objAcc.Id=accId;
         objAcc.Name='Test'+accId;
-    }
+            }
     public static Contact createContact(Id accId, String contactName){
         Contact objCon=new Contact(Name=contactName, AccountId=accId);
         insert objCon;
