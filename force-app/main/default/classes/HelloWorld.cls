@@ -4,6 +4,7 @@ public with sharing class HelloWorld {
     system.debug('commit our changes dude!!');
     integer a;
     }
+    public set<Integer> intSet;
     public static void gulMohorNagar(Id accId){
         Account objAcc=new Account();
         objAcc.Id=accId;
